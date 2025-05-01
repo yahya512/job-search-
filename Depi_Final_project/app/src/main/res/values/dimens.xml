@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="window_padding">20dp</dimen>
+</resources>
