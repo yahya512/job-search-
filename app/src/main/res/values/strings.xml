@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BeAble</string>
+    <string name="rightAddress">The Right Address\nFor Shopping\nAnyday</string>
+    <string name="quality">it is now very easy to reach the\nbest quality among the\nproducts on the internet!</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="arrow_icon_desc">Navigate</string>
+    <string name="notifications_label">Notifications</string>
+    <string name="notifications_switch_desc">Toggle notifications</string>
+</resources>

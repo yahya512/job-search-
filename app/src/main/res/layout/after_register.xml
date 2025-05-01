@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <FrameLayout
+                android:id="@+id/frame"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="240dp"
+                android:layout_width="215dp"
+                android:layout_height="214dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circularImage"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                app:layout_constraintStart_toStartOf="@id/frame"
+                app:layout_constraintEnd_toEndOf="@id/frame"
+                app:layout_constraintTop_toTopOf="@id/frame"
+                app:layout_constraintBottom_toBottomOf="@id/frame"
+                android:src="@color/g_gray500" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_constraintStart_toStartOf="@id/circularImage"
+                app:layout_constraintEnd_toEndOf="@id/circularImage"
+                app:layout_constraintTop_toTopOf="@id/circularImage"
+                app:layout_constraintBottom_toBottomOf="@id/circularImage"
+                android:src="@drawable/ic_right" />
+
+
+
+    <TextView
+        style="@style/h4"
+        android:text="Hi User!"
+        android:textSize="24sp"
+        android:id="@+id/hiText"
+        app:layout_constraintStart_toStartOf="@id/frame"
+        app:layout_constraintEnd_toEndOf="@id/frame"
+        app:layout_constraintTop_toBottomOf="@id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        style="@style/h3"
+        android:text="Your Registeration Successful"
+        android:textSize="16sp"
+        android:id="@+id/congrats"
+        android:paddingBottom="16dp"
+        app:layout_constraintStart_toStartOf="@id/hiText"
+        app:layout_constraintEnd_toEndOf="@id/hiText"
+        app:layout_constraintTop_toBottomOf="@id/hiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingBottom="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        style="@style/h2"
+        android:text="Unlcok job offers by completing your profile and let 450+ companies approach you!"
+        android:textSize="12sp"
+        android:id="@+id/unlock"
+        app:layout_constraintStart_toStartOf="@id/congrats"
+        app:layout_constraintEnd_toEndOf="@id/congrats"
+        app:layout_constraintTop_toBottomOf="@id/congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Continue"
+        app:layout_constraintStart_toStartOf="@id/unlock"
+        app:layout_constraintEnd_toEndOf="@id/unlock"
+        app:layout_constraintTop_toBottomOf="@id/unlock"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/g_blue"
+        android:layout_height="wrap_content"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
