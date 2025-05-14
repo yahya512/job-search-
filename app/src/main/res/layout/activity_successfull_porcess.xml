@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+    <!-- Success Icon -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_success" />
+
+    <!-- Greeting Text -->
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi Adam"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Success Message -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Your Registration successful!"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_marginVertical="24dp"
+        android:background="@color/gray_light" />
+
+    <!-- Incentive Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="Unlock job offers by completing your profile and let 450+ companies approach you!"
+        android:textColor="@color/gray_dark"
+        android:textSize="16sp"
+        android:textAlignment="center" />
+
+    <!-- Continue Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp" />
+
+</LinearLayout>

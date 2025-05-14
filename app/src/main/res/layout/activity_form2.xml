@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/main"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/egy"/>
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="profesional profile"
+            android:textSize="24sp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Full Name Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Portfolio *"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etPortfolio"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter your Portfolio Link"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_rounded"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Summary"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etProfile_summary"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="your summary"
+            android:gravity="top|start"
+            android:inputType="textEmailAddress|textMultiLine"
+            android:background="@drawable/edit_text_background"
+            android:maxLength="100"
+            android:padding="12dp"
+            android:minLines="3"
+            android:maxLines="5"/>
+
+        <!-- Character Count -->
+        <TextView
+            android:id="@+id/text_char_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/100"
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:paddingTop="4dp"/>
+        <!-- Phone Number Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jop Title *"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerJobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="#6200EE"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginEnd="32dp" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

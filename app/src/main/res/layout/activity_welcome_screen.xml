@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context=".WelcomeScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_ellepse"
+            android:layout_width="260dp"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ellipse_one" />
+
+        <ImageView
+            android:id="@+id/img_ellepse2"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="-70dp"
+            android:layout_marginEnd="-105dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_ellepse"
+            app:srcCompat="@drawable/ellipse_two" />
+
+        <ImageView
+            android:id="@+id/img_background"
+            android:layout_width="350dp"
+            android:layout_height="380dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/img_ellepse"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_work_from_home" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/discover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="@string/discover"
+            android:textSize="29sp"
+            app:layout_constraintEnd_toEndOf="@+id/img_background"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/img_background"
+            app:layout_constraintTop_toBottomOf="@+id/img_background" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/explore_Text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/btn_welcome_login"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="-16dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="@color/DiscoverText"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textSize="19sp"
+            app:cornerRadius="9dp"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/btn_welcome_register"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="-16dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:cornerRadius="9dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toTopOf="@+id/btn_welcome_login" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
